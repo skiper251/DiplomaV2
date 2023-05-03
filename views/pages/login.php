@@ -10,7 +10,7 @@ use App\services\Page;
 </head>
 <body>
 <?php
-echo 123;
+echo 1234;
 ?>
 <form action="main" method="post">
     <h2>LOGIN</h2>
