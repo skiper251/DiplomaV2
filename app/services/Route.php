@@ -9,8 +9,8 @@ class Route
     public static function page($uri, $page_name)
     {
         self::$list[] = [
-            "uri" => $uri,
-            "page" => $page_name
+            "uri" => $uri,//URI
+            "page" => $page_name//FILE NAME
         ];
     }
 
@@ -20,7 +20,13 @@ class Route
         foreach (self::$list as $route){
             if ($route["uri"] === '/'.$querry){
                 require_once "views/pages/".$route['page'].".php";
+                die();
             }
         }
+        self::not_found_page();
+    }
+    private static function not_found_page()
+    {
+        echo "page not found";
     }
 }

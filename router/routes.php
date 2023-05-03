@@ -2,8 +2,8 @@
 
 use App\services\Route;
 
-Route::page("/test","test");
-Route::page("/test2","test2");
+Route::page("/login","login");
+Route::page("/","home");
 Route::enable();
 
 
