@@ -1,14 +1,11 @@
 <?php
 use App\services\Page;
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Title</title>
     <link rel="stylesheet" href="/asssets/css/bootstrap.min.css">
 </head>
 <body>
@@ -23,18 +20,18 @@ use App\services\Page;
             <div class="col border">
                 <table class="table">
                     <?php
-                    page::part('home_Page_Content');
+                    page::part('storage_Page_Content');
                     ?>
                 </table>
                 <h1>Hollo Bootstrap</h1>
             </div>
 
         </div>
-
     </div>
     <?php
     page::part('footer');
     ?>
 </main>
 </body>
+
 </html>

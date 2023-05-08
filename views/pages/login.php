@@ -9,10 +9,7 @@ use App\services\Page;
     <link rel="stylesheet" type="text/css" href="/css/login_styles.css"
 </head>
 <body>
-<?php
-echo 1234;
-?>
-<form action="main" method="post">
+<form action="home" method="post">
     <h2>LOGIN</h2>
     <lable>User Name</lable>
     <label>
