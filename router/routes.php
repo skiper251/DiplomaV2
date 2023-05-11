@@ -1,10 +1,14 @@
 <?php
 
-use App\services\Route;
+use App\services\Router;
+use App\controllers\Auth;
 
-Route::page("/","login");
-Route::page("/home","home");
-Route::page("/storage","storage");
-Route::enable();
+Router::page("/","login");
+Router::page("/home","home");
+Router::page("/storage","storage");
+
+Router::post('/auth/login',Auth::class,'login');
+
+Router::enable();
 
 

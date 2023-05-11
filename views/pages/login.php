@@ -9,7 +9,7 @@ use App\services\Page;
     <link rel="stylesheet" type="text/css" href="/css/login_styles.css"
 </head>
 <body>
-<form action="   " method="post">
+<form action="/auth/login" method="post">
     <h2>LOGIN</h2>
     <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
