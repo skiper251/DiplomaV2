@@ -1,5 +1,9 @@
 <?php
 use App\services\Page;
+
+if (!$_SESSION["user"]){
+    App\services\Router::redirect('/');
+}
 ?>
 <!doctype html>
 <html lang="en">

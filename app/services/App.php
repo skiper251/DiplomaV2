@@ -8,6 +8,14 @@ class App
     {
         self::libs();
         self::db();
+        self::isLogin();
+    }
+
+    public static function isLogin()
+    {
+        if ($_SERVER["REQUEST_URI"] != '/'&& !$_SESSION["user"]) {
+            \App\services\Router::redirect('/');
+        }
     }
     public static function libs()
     {
@@ -15,6 +23,7 @@ class App
         foreach ($config['libs'] as $lib){
             require_once  "libs/" . $lib . ".php";
         }
+
     }
     public static function db()
     {

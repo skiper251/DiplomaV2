@@ -39,6 +39,7 @@ class Router
                 }
             }
         }
+
         self::not_found_page();
     }
 

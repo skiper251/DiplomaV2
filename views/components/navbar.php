@@ -7,3 +7,13 @@
 <div class="row">
     <a href="3">content</a>
 </div>
+<div class="row">
+    <?php
+    if ($_SESSION["user"]){
+    ?>
+    <form action="/auth/logout" method="post">
+        <button type="submit">Logout</button>
+<?php
+}
+?>
+</div>
