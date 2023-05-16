@@ -20,7 +20,6 @@ class Auth
             exit();
         } else {
             if ($user['user_name'] === $uname && $user['password'] === $password) {
-
                 $_SESSION["user"] = [
                     "id" => $user->id,
                     "user_name" => $user->user_name,//онменять нейм и юзер нейм на нормальніе слова тут и в БД todo

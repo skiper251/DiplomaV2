@@ -5,7 +5,10 @@ use App\services\Page;
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Storage</title>
     <link rel="stylesheet" href="/asssets/css/bootstrap.min.css">
 </head>
 <body>
@@ -25,7 +28,6 @@ use App\services\Page;
                 </table>
                 <h1>Hollo Bootstrap</h1>
             </div>
-
         </div>
     </div>
     <?php
@@ -33,5 +35,4 @@ use App\services\Page;
     ?>
 </main>
 </body>
-
 </html>

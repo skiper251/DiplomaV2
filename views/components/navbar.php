@@ -1,18 +1,19 @@
 <div class="row">
-    <a href="/home">home</a>
+    <a href="/home">Головна</a>
 </div>
 <div class="row">
-    <a href="/storage">storage</a>
+    <a href="/storage">Склад</a>
 </div>
 <div class="row">
-    <a href="3">content</a>
+    <a href="3">Контент</a>
 </div>
 <div class="row">
     <?php
     if ($_SESSION["user"]){
     ?>
     <form action="/auth/logout" method="post">
-        <button type="submit">Logout</button>
+        <button type="submit">Вихід</button>
+    </form>
 <?php
 }
 ?>

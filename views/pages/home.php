@@ -1,9 +1,5 @@
 <?php
 use App\services\Page;
-
-if (!$_SESSION["user"]){
-    App\services\Router::redirect('/');
-}
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,7 +8,7 @@ if (!$_SESSION["user"]){
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="/asssets/css/bootstrap.min.css">
 </head>
 <body>
@@ -32,9 +28,7 @@ if (!$_SESSION["user"]){
                 </table>
                 <h1>Hollo Bootstrap</h1>
             </div>
-
         </div>
-
     </div>
     <?php
     page::part('footer');
