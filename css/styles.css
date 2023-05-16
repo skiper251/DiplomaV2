@@ -1,0 +1,44 @@
+body {
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+p {
+    margin-block-start: 0;
+    text-indent: 1rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    width: 40px;
+    margin: 1.5rem 0 1rem 0;
+}
+
+#root {
+    display: flex;
+    height: 100%;
+}
+
+#main-page {
+    flex-grow: 1;
+}
+
+.nav_vrapper{
+    display: flex;
+    height: 100%;
+}
+
+nav {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+}
+nav > a {
+    margin: 0.5rem 0;
+}
+.content{
+    margin: 0 auto;
+}
