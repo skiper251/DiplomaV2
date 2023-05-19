@@ -1,5 +1,5 @@
 <?php
-$storage = R::getAll( "SELECT s.id , idesc.name , s.Кількість , idesc.description , idesc.price , m.medecineType , c.countryName , a.anymalType , asst.assigmentType FROM `storage` s 
+$storage = R::getAll( "SELECT s.id , idesc.name , s.count , idesc.description , idesc.price , m.medecineType , c.countryName , a.anymalType , asst.assigmentType FROM `storage` s 
 JOIN `Item_description` idesc ON idesc.id=s.item_id 
 JOIN `medecineID` m ON m.id=idesc.medecineID
 JOIN `countryID` c ON c.id=idesc.countryID
@@ -43,18 +43,16 @@ foreach ($storage as $elem)
     <tr>
         <td><?= $elem['id'] ?></td>
         <td><?= $elem['name'] ?></td>
-        <td><?= $elem['Кількість'] ?></td>
+        <td><?= $elem['count'] ?></td>
         <td><?= $elem['description'] ?></td>
         <td><?= $elem['price'] ?></td>
         <td><?= $elem['medecineType'] ?></td>
         <td><?= $elem['countryName'] ?></td>
         <td><?= $elem['anymalType'] ?></td>
         <td><?= $elem['assigmentType'] ?></td>
-        <form action="/db/update" method="post">
-        <td><button type="submit" name="<?=$elem['id']?>">Оновити</td>
+        <form action="/db/delete" method="post">
+            <td><button type="submit" name="<?=$elem['id']?>">delete</td>
         </form>
-        <td><a style="color: red;" href="vendor/delete.php?id=<?= $elem[0] ?>">Видалити</a></td>
-
     </tr>
 
         <?php
@@ -65,28 +63,13 @@ foreach ($storage as $elem)
 
 
 <h3>Add new product</h3>
-<form action="config/create.php" method="post">
+<form action="/db/add" method="post">
     <p>
         item_id<label>
             <input type="text" name="item_id">
         </label>
         кількість<label>
             <input type="text" name="count">
-        </label>
-        description<label>
-            <input type="text" name="description">
-        </label>
-        medecineType<label>
-            <input type="text" name="medecineType">
-        </label>
-        countryName<label>
-            <input type="text" name="countryName">
-        </label>
-        anymalType<label>
-            <input type="text" name="anymalType">
-        </label>
-        assigmentType<label>
-            <input type="text" name="assigmentType">
         </label>
     </p>
     <button type="submit" name="submit">Add new product

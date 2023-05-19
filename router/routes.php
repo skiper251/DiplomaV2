@@ -10,8 +10,10 @@ Router::page("/storage","storage");
 
 Router::post('/auth/login',Auth::class,'login');
 Router::post('/auth/logout',Auth::class,'logout');
-Router::post('/db/update',Db::class,'update');
 
+Router::post('/db/update',Db::class,'update');
+Router::post('/db/add',Db::class,'add');
+Router::post('/db/delete',Db::class,'delete');
 
 Router::enable();
 
