@@ -33,6 +33,29 @@
         background-color: #0069d9;
         border-color: #0062cc;
     }
+
+    .news-container {
+        margin-top: 3rem;
+    }
+
+    .news-item {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        border-radius: 0.3rem;
+    }
+
+    .news-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .news-content {
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.6;
+    }
 </style>
 
 <div class="jumbotron">
@@ -42,4 +65,19 @@
     <p>Доброго дня, <?php echo $_SESSION['user']['name']; ?>!</p>
     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+<div class="news-container">
+    <div class="news-item">
+        <h2 class="news-title">Новина 1</h2>
+        <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt dolor eget nisi ultricies sagittis. Sed lacinia enim ut metus luctus semper. Sed non turpis vitae justo fermentum posuere. Donec sed metus nec tellus tincidunt auctor. Vestibulum efficitur, nulla vitae tristique semper, ante felis laoreet mi, eu eleifend nisi ligula id ante. Nam ut lacus ac odio venenatis varius nec at felis. In eleifend massa sed ligula laoreet bibendum.</p>
+    </div>
+    <div class="news-item">
+        <h2 class="news-title">Новина 2</h2>
+        <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt dolor eget nisi ultricies sagittis. Sed lacinia enim ut metus luctus semper. Sed non turpis vitae justo fermentum posuere. Donec sed metus nec tellus tincidunt auctor. Vestibulum efficitur, nulla vitae tristique semper, ante felis laoreet mi, eu eleifend nisi ligula id ante. Nam ut lacus ac odio venenatis varius nec at felis. In eleifend massa sed ligula laoreet bibendum.</p>
+    </div>
+    <div class="news-item">
+        <h2 class="news-title">Новина 3</h2>
+        <p class="news-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt dolor eget nisi ultricies sagittis. Sed lacinia enim ut metus luctus semper. Sed non turpis vitae justo fermentum posuere. Donec sed metus nec tellus tincidunt auctor. Vestibulum efficitur, nulla vitae tristique semper, ante felis laoreet mi, eu eleifend nisi ligula id ante. Nam ut lacus ac odio venenatis varius nec at felis. In eleifend massa sed ligula laoreet bibendum.</p>
+    </div>
 </div>

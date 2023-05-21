@@ -12,8 +12,8 @@ class storageDB
         $bean = \R::dispense('storage');
         $bean ->item_id = $data["item_id"];
         $bean ->count = $data["count"];
-        //$idbean = \R::store($bean);
-        //Router::redirect('/storage');
+        $idbean = \R::store($bean);
+        Router::redirect('/storage');
     }
     public static function delete($data)
     {
