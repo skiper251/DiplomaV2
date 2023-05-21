@@ -15,7 +15,7 @@ use App\services\Page;
 <main class="h-100">
     <div class="container-fluid text-center min-vh-100">
         <div class="row">
-            <div class="col-1 border">
+            <div class="col-1 border w-auto">
                 <?php
                 page::part('navbar');
                 ?>
@@ -26,7 +26,6 @@ use App\services\Page;
                     page::part('storage_Page_Content');
                     ?>
                 </table>
-                <h1>Hollo Bootstrap</h1>
             </div>
         </div>
     </div>

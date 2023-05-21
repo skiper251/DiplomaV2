@@ -1,30 +1,23 @@
 <?php
 
-namespace App\controllers;
+namespace App\controllers\querrys;
 
 use App\services\Router;
 
-class Db
+class storageDB
 {
-    public static function update($data)
-    {
-        var_dump($data);
-        $bean = \R::dispense('storage');
-        $bean ->item_id = $data["item_id"];
-        $bean ->count = $data["count"];
-    }
     public static function add($data)
     {
         var_dump($data);
         $bean = \R::dispense('storage');
         $bean ->item_id = $data["item_id"];
         $bean ->count = $data["count"];
-        $idbean = \R::store($bean);
-        var_dump($idbean);
-        Router::redirect('/storage');
+        //$idbean = \R::store($bean);
+        //Router::redirect('/storage');
     }
     public static function delete($data)
     {
+        var_dump($data);
         $key = array_keys($data);
         $id = $key[0];
         $find = \R::findOne('storage', 'id = ?',[$id]);

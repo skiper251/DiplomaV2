@@ -5,8 +5,6 @@ JOIN `medecineID` m ON m.id=idesc.medecineID
 JOIN `countryID` c ON c.id=idesc.countryID
 JOIN `animalType` a ON a.id=idesc.animalTypeID
 JOIN `assigmentType` asst ON asst.id=idesc.assigmentTypeID");
-//var_dump($storage[26]->getProperties()['id'
-//]);
 ?>
 <style>
     th, td {
@@ -63,7 +61,7 @@ foreach ($storage as $elem)
 
 
 <h3>Add new product</h3>
-<form action="/db/add" method="post">
+<form action="/storagedb/add" method="post">
     <p>
         item_id<label>
             <input type="text" name="item_id">

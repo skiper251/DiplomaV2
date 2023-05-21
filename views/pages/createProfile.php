@@ -21,11 +21,9 @@ use App\services\Page;
                 ?>
             </div>
             <div class="col border">
-                <table class="table">
                     <?php
-                    page::part('home_Page_Content');
+                    page::part('createProfile_Page_Content');
                     ?>
-                </table>
             </div>
         </div>
     </div>

@@ -5,7 +5,10 @@
     <a href="/storage">Склад</a>
 </div>
 <div class="row">
-    <a href="3">Контент</a>
+    <a href="/createProfile">Створення картки клієнтів</a>
+</div>
+<div class="row">
+    <a href="/viewProfile">Перегляд картки клієнтів</a>
 </div>
 <div class="row">
     <?php
